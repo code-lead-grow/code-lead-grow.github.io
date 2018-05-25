@@ -89,7 +89,7 @@ const styles = {
       flexDirection: `column`,
     },
   },
-  wrap: { flex: 1, width: '100%' },
+  wrap: { flex: 1, width: '100%', alignSelf: 'flex-end' },
 };
 
 export default SquareMenu
