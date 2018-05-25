@@ -1,0 +1,190 @@
+/* elements */
+html {font-size: 1.125em; box-sizing: border-box;}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: white;
+  font-family: 'Nunito', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: rgba(0,0,0,0.87);
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Arsenal', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; }
+
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-family: ;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.998em;
+}
+
+h2 {font-size: 2.827em;}
+
+h3 {font-size: 1.999em;}
+
+h4 {font-size: 1.414em;}
+
+small, .font_small {font-size: 0.707em;}
+
+/* end typesetting */
+
+h2 {
+  font-weight: normal;
+  color: rgba(0,0,0,0.87);
+}
+p { color: rgba(0,0,0,0.74); }
+img { max-width: 100%; }
+a { color:#3198c6; text-decoration: none; }
+ul, ol { padding: 0; margin: 0; }
+li { padding: 0; margin-bottom: 7px; margin-left: 36px; }
+
+.table__simple tr {
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 7px;
+}
+@media screen and (min-width: 700px) {
+  .table__simple tr {
+    flex-direction: row;
+    justify-content: unset;
+  }
+
+  .table__simple tr td {
+    padding: 12px;
+    min-width: 75px;
+  }
+}
+
+/* module */
+.content { overflow: hidden; }
+/*.header { flex-direction: column; text-align: center; }*/
+/*.header ul { list-style: none; }*/
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 872px;
+  /*background: #fffefa;*/
+  /*box-shadow: 0 0 0 2px #ffc488;*/
+  margin: 24px 0 24px 2px;
+  overflow: hidden;
+}
+.logo {
+  width: 150px;
+}
+.avatar-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #FFF;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+  .avatar {
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 24px;
+    height: 200px;
+    flex-shrink: 0;
+  }
+
+/* calendar module */
+.calendar {
+  display: flex;
+  flex-direction: column;
+}
+  .event {
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+    .event h3 { color: #ea9f0d; letter-spacing: 0.035em; font-family: 'Arsenal', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;  }
+    .date {
+      border-radius: 4px;
+      width: 100px;
+      overflow: hidden;
+      background-color: #DDD;
+      margin-right: 24px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+    }
+      .date .month {
+        text-align: center;
+        padding: 6px;
+        background-color: rgb(231, 89, 123);
+        box-shadow: 0 -3px 0 0 #000000 inset;
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.66);
+        font-weight: normal;
+      }
+      .date .day {
+        background-color: #fff9da;
+        min-height: 100%;
+        text-align: center;
+        padding: 6px 12px;
+        color: #b17300;
+        font-size: 1.15em;
+      }
+
+.content a[target="_blank"]:after {
+  content: url(../pages/img/icon-external-link.svg);
+  padding: 0 0 0 6px;
+  position: relative;
+  top: 1px;
+  opacity: .75;
+}
+.content a[target="_blank"]:hover:after {
+  opacity: 1;
+}
+
+/* helper */
+
+.font__arsenal { font-family: 'Arsenal', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; }
+.font__arsenal--bold { font-family: 'Arsenal', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight:700; }
+.font__16 { font-size: 16px; }
+.font__24 { font-size: 24px; }
+.font__italic { font-style: italic; }
+.font__highlight { background: lightyellow; padding: 0 3px; }
+
+.accessibility {
+  position: absolute !important;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* @media */
+@media screen and (min-width: 1200px) {
+  .no-favs { display: none; }
+  .copyright { margin-top: 12px; }
+  .wrap { flex-direction: row; align-items: flex-start; }
+}
+@media screen and (max-width: 700px) {
+  html { font-size: 100%; }
+  h2 { text-align: center; }
+  .logo { width: 100px; }
+  .event { flex-direction: column; }
+  .date { height: 75px; width: 75px; }
+  .avatar-wrap { flex-direction: column; padding: 12px; text-align: center; }
+  .date { margin: 0; }
+}

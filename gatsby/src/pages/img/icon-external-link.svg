@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 885 906" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Untitled</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#F6F6F6" stroke-width="150" x="123" y="329" width="502" height="502" rx="100"></rect>
+        <rect id="Rectangle" stroke="#3198C6" stroke-width="100" x="50" y="248" width="552" height="552" rx="100"></rect>
+        <g id="Group" transform="translate(357.000000, 87.000000)">
+            <path d="M0.5,523.5 L313.332223,210.667777" id="Line" stroke="#F6F6F6" stroke-width="150" stroke-linecap="square"></path>
+            <polygon id="Path-2" fill="#F6F6F6" points="196 0 527.200978 0 527.200978 329"></polygon>
+        </g>
+        <g id="Group" transform="translate(326.000000, 0.000000)">
+            <path d="M0.5,523.5 L313.332223,210.667777" id="Line" stroke="#3198C6" stroke-width="150" stroke-linecap="square"></path>
+            <polygon id="Path-2" fill="#3198C6" points="196 0 527.200978 0 527.200978 329"></polygon>
+        </g>
+    </g>
+</svg>
