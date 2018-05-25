@@ -3,9 +3,9 @@ const { UnpackMarkdownEdges } = require('./src/utils');
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
-  const eventTemplate = nodePath.resolve(`src/templates/event.js`);
-  const blogTemplate = nodePath.resolve(`src/templates/blog.js`);
-  const pageTemplate = nodePath.resolve(`src/templates/page.js`);
+  const eventTemplate = nodePath.resolve(`./src/templates/event.js`);
+  const blogTemplate = nodePath.resolve(`./src/templates/blog.js`);
+  const pageTemplate = nodePath.resolve(`./src/templates/page.js`);
 
   return graphql(`{
     allMarkdownRemark {
