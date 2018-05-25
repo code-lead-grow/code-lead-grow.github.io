@@ -1,7 +1,7 @@
 ---
 title: "About Us"
 path: "/about"
-component: "src/pages/about/about-template.js"
+component: "src/templates/about.js"
 ---
 
 ## We stretch your skills and make you better.

@@ -2,12 +2,12 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 
-import { UnpackMarkdownNode } from '../../utils';
-import commonStyles from '../../styles/common.styles';
-import adamImg from './img/adam-tombleson.jpg';
-import jerImg from './img/jeremiah-trein.jpg';
-import pombaImg from './img/pomba-magar.jpg';
-import youImg from './img/team-you-blank.png';
+import { UnpackMarkdownNode } from '../utils';
+import commonStyles from '../styles/common.styles';
+import adamImg from '../pages/about/img/adam-tombleson.jpg';
+import jerImg from '../pages/about/img/jeremiah-trein.jpg';
+import pombaImg from '../pages/about/img/pomba-magar.jpg';
+import youImg from '../pages/about/img/team-you-blank.png';
 
 const teamWrapStyles = {
   display: 'flex',
@@ -111,13 +111,12 @@ const About = ({ data }) => {
 };
 
 export const aboutQuery = graphql`
-  query About($path: String!) {
+  query AboutPage($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
         title
         path
-        excerpt
       }
     }
   }
